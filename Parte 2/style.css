@@ -1,53 +1,128 @@
 header {
-
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
 
 }
-
-
 h2 {
-
+	height: 30px;
+	width: 33%;%;
+	border: 1px solid;
+	align-content: center;
+	text-align: center;
 }
 
 .nav {
-
+	display: flex;
+	flex-flow: row wrap;
+	
 
   }
 
   li {
-
+  	border: 1px solid;
+	display: flex;
+	padding-top: 5px;
+	text-align: center;
+	justify-content: center;
+	height: 20px;
+	width:250px;
+	margin-right: 3px;
 
   }
 
   .content{
-
+  	display:flex;
+	border: 1px solid;
 }
 
   .aside {
-
+  	display: flex;
+	float:left;
+  	width: 100%;
+  	height: 230px;
+  	border: 1px solid;
+  	flex-direction: column;
   }
 
   .slidebox{
-
+  	border: 1px solid;
+	margin-top: 10%;
+	margin-right: 5%;
+	display: flex;
+	justify-content: center;
+	margin-left: 0px;
+	margin-right: 0px;
    
   }
 
   .article{
-
+  	display: flex;
+	flex-direction: row;
   }
 
 
 .poem{
-
+	border: 1px solid;
+	display: flex;
+	justify-content: center;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 
 /*Device = Tablets, Ipads (portrait)
   Screen = B/w 600px to 990px*/
   @media (min-width:600px) and (max-width: 990px)  {
-    .article {
-
-  } 
 header{
+display: none;
+}
+.nav {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	
+  }
+.nav > li {
+	border: 1px solid;
+	display: flex;
+	padding-top: 5px;
+	text-align: center;
+	justify-content: center;
+	height: 20px;
+	width: 150px;
+}
+.content{
+	display:flex;
+	border: 1px solid;
+}
+.aside{
+	display: flex;
+	float:left;
+  	width: 100%;
+  	height: 230px;
+  	border: 1px solid;
+  	flex-direction: column;
+}
+.slidebox{
+ 	border: 1px solid;
+	margin-top: 10%;
+	margin-right: 5%;
+	display: flex;
+	justify-content: center;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.article{
+	display: flex;
+	flex-direction: column;
+}
+.poem{
+	border: 1px solid;
+	display: flex;
+	justify-content: center;
+	margin-left: 0px;
+	margin-right: 0px;
 
 }
 }
@@ -56,21 +131,23 @@ header{
 @media (max-width:599px) {
 
 header,.content{
-
+ display: none;
 }
 
 .nav {
-
-
+	display: flex;
+	flex-direction: column;
+	
   }
 
 
 .nav > li {
-
+	border: 1px solid;
+	margin-top: 10%;
+	margin-right: 5%;
+	display: flex;
+	justify-content: center;
 }
-
-
 }
-
 
   
